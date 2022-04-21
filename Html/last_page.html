@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='../Css/questions.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Questions!!
+        </title>
+        <script src='../Javascript/questions.js'></script>
+        
+        <style>
+            .div1{
+                border: 2px solid black;
+                padding: 20px;
+                margin-bottom : 20px;
+                background: linear-gradient(rgba(241, 174, 48, 0.603),rgba(255, 255, 255, 0.507),rgba(98, 231, 98, 0.514));
+                border-radius: 4px;
+            }
+            #p1,#p2{
+                background-color: #dd453a;
+                color: white;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 4px;
+            }
+            .note{
+                border:2px solid black;
+                margin: 4px;
+                padding: 8px;
+                border-radius: 4px;
+                font-size: 10px;
+            }
+            .container{
+                margin-top: 5px;
+                
+            }
+            @media only screen and (max-width: 600px){
+                html{
+                    font-size: 60%;
+
+                }
+                .container{
+                    margin-top:50px;
+                }
+            }
+            @media only screen and (max-width: 400px){
+                .note{
+                    font-size: 8px;
+                }
+            }
+            
+        </style>
+    </head>
+<body>
+    
+    <div class='container'>
+    <h1>Thankyou For Visiting!!</h1>
+    <div class='div1'>
+    <p id='p1'>Your Total Score: &nbsp <span id='score'></span> points out of 40 points </p>
+    <p id='p2'>Your Performance in Test: &nbsp<span id='perform'></span></p>
+    <div class='note'>
+        <p><b>Note:</b></p>
+        <p>Thankyou for using our website new<br> questions and features will be added soon.</p>
+    </div>
+    </div>
+
+    
+    
+    <button type="submit" id='btn1' onclick="window.location.href='../Html/index.html'">Take Test Again</button>
+    <button type="button" id='btn2' onclick="window.location.href='AboutUs.html';" >About Us</button>
+    <button type="button" id='btn2' onclick="window.location.href='question_insta.html';">Prev</button>
+    <script>
+        let total=sessionStorage.getItem('marks');
+        document.getElementById('score').innerHTML= total + '    ';
+        var msg;
+        if(total==40) msg='Perfect';
+        else if(total>30 && total<40) msg='Very Good';
+        else if(total>20 && total<=30) msg='Good';
+        else if(total>10 && total<=20) msg='Normal';
+        else if(total>5 && total<=10) msg='Bad';
+        else if(total>0 && total<=5) msg='Very Bad';
+        else if(total==0) msg='Worst';
+        else if(total<0)  msg= 'Poor';
+        document.getElementById('perform').innerHTML= msg + '    ';
+     </script>
+    
+
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import "https://fonts.googleapis.com/css2?family=Cookie&display=swap";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(138, 136, 136, 0.493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cookie', cursive;
+}
+ul {
+    text-decoration-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    background: rgba(0, 0, 0, 0.788);
+    font-size: 130%;
+    padding: 0.5rem 1rem;
+}
+li a:hover{
+    background-color: rgba(26, 191, 247, 0.527);
+}
+body{
+    background: url('../Images/zenitsu_bg\ \(2\).jpg');
+    
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cookie', cursive;
+    padding-top: 40%;
+}
+
+.container{
+    width: 80%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40%;
+    padding-bottom: 40%;
+    
+}
+
+#start,#start1{
+    text-decoration:none;
+    color: white;
+    padding: 8px 20px;
+    background: rgba(8, 140, 184, 0.856);
+    font-size: 35px;
+    border-radius: 4px;
+}
+
+.start:hover{
+    background: rgba(11, 133, 173, 0.973);
+}
+
+@media (max-width:400px){
+    .outer{
+        padding-top:35%;
+    }
+    li a {
+        font-size: 115%;
+    }
+}
+
+@media (max-width:350px){
+    .outer{
+        padding-top:30%;
+    }
+    li a {
+        font-size: 95%;
+    }
+}
+
+@media (min-width:900px){
+    body{
+        background-size: cover;
+
+        background-image: url('../Images/desktop_zenitsu.jpg');
+    }
+    .outer{
+        padding-top: 120px;
+    }
+    .container{
+        padding: 180px;
+        width: 30%;
+    }
+}

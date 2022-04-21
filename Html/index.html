@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='../Css/index.css' rel='stylesheet'>
+        <script src='../Javascript/questions.js'></script>
+        <script>
+            var points1=0;
+            sessionStorage.setItem('marks',points1);
+
+        </script>
+        
+       
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <!-- <li><a href="#" class="lists"><i class="fa fa-instagram"></i></a></li> -->
+                    <li><a href="index.html" class="lists">Home</a></li>
+                    <li><a href="index.html" class="lists">Start Test</a></li>
+                    <li><a href="AboutUs.html" class="lists">About Us</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class='outer'>
+        <div class='container'>
+            <a href="question_html.html"  id='start' >Let's get Started!</a>
+            <a href="index.html" download id='start1' > Click </a>
+            </div>
+    </div>
+    <script>
+            
+        if(navigator.userAgent.includes("Chrome")){
+            document.getElementById('start').style.display="block";
+            document.getElementById('start1').style.display="none";
+        }
+      
+        if(navigator.userAgent.includes("Instagram")){
+            document.getElementById('start1').style.display="block";
+            document.getElementById('start').style.display="none";
+            document.getElementById('navbar').style.display="none";
+        }
+      </script>
+    </body>
+</html>
+
+
+
+
+ 
+
+
+

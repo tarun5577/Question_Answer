@@ -1,0 +1,158 @@
+@import "https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Cookie&display=swap";
+
+body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    background: url('Webp.net-resizeimage.jpg');
+    padding-top:10%;
+}
+
+
+
+.container{
+    width: 80%;
+   
+    background: linear-gradient(rgba(214, 211, 211, 0.61),rgba(118, 59, 255, 0.562));
+    padding: 3%;
+    font-family: 'Cookie', cursive;
+    
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myimg{
+    height: 180px;
+    width: 180px;
+    border-radius: 90px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding-top:10px;
+    font-size: 290%;
+    font-weight: normal;
+}
+.container > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top:0px;
+   
+    font-size: 140%;
+    
+
+}
+.insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 140%;
+    padding-bottom: 5%;
+    font-family: 'Cookie', cursive;
+    
+    
+}
+.fa-instagram{
+    font-size:300%;
+    color: rgba(28, 185, 238, 0.795);
+    padding: 3%;
+    text-align:center;
+    text-decoration: none;
+
+}
+
+.fa-github{
+    font-size:300%;
+    color: rgba(2, 2, 2, 0.932);
+    padding: 3%;
+    text-align:center;
+    text-decoration: none;
+    
+}
+.fa-google{
+    font-size:260%;
+    color: rgba(218, 44, 32, 0.849);
+    padding: 3%;
+    text-align:center;
+    text-decoration: none;
+
+    
+}
+.fa:hover{
+    opacity:0.7;
+}
+.tag1{
+    background: linear-gradient(rgba(66, 182, 221, 0.815),rgba(95, 95, 236, 0.774));
+    padding:10px;
+    border-radius: 3px;
+    
+}
+.tag2{
+    background: linear-gradient(rgba(34, 231, 110, 0.822),rgba(75, 202, 149, 0.795));
+    padding:10px;
+    border-radius: 3px;
+    
+}
+.tag3{
+    background: linear-gradient(rgba(228, 19, 19, 0.801),rgba(223, 81, 81, 0.801));
+    padding:10px 3px;
+    border-radius: 3px;
+    
+}
+
+
+@media (max-width:400px){
+    html{
+        font-size:85%;
+    }
+    .myimg{
+        height: 150px;
+        width: 150px;
+        border-radius: 90px;
+    }
+}
+@media (max-width:340px){
+    html{
+        font-size: 70%;
+    }
+}
+
+@media (min-width:900px){
+    html{
+        font-size: 120%;
+    }
+    body{
+        background-image: url('destop_pubg.jpg');
+        padding: 20px;
+    }
+    .container{
+        padding: 20px;
+    }
+    .img-container{
+        margin: 0px;
+    }
+    
+    .mydiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .insta{
+        padding-bottom: 10px;
+    }
+
+}
