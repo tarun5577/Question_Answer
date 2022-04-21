@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     background-size:cover;
-    background: url('Webp.net-resizeimage.jpg');
+    background: url('../Images/Webp.net-resizeimage.jpg');
     padding-top:10%;
 }
 
